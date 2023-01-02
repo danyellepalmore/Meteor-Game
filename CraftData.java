@@ -46,6 +46,12 @@ public class CraftData {
 	public void set_maxSpeed(double _maxSpeed) {
 		this._maxSpeed = _maxSpeed;
 	}
+	public ArrayList<String> getImageFiles() {
+		return imageFiles;
+	}
+	public void setImageFiles(ArrayList<String> imageFiles) {
+		this.imageFiles = imageFiles;
+	}
 	
 	public String toString() {
 		return _phaserSoundFile + "|";
