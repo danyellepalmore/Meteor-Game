@@ -2,41 +2,41 @@ package personalproject;
 
 public class ExplosionData {
 	//images for explosion animation
-	private String explosionSpriteFile;
+	private ArrayList<String> _explosionSpriteFile;
 	//# of images on each sprite row
-	private int explosionRows;
+	private int _explosionRows;
 	//# of images on each sprite column
-	private int explosionCols;
+	private int _explosionCols;
 	
 	//set default values & **instantiate array list
 	public ExplosionData() {
-		explosionSpriteFile = null;
-		explosionRows = 0;
-		explosionCols = 0;
+		_explosionSpriteFile = new ArrayList<>();
+		_explosionRows = 0;
+		_explosionCols = 0;
 	}
 	
 	//getters and setters
-	public String getExplosionSpriteFile() {
-		return explosionSpriteFile;
+	public ArrayList<String> getExplosionSpriteFile() {
+		return _explosionSpriteFile;
 	}
-	public void setExplosionSpriteFile(String explosionSpriteFile) {
-		this.explosionSpriteFile = explosionSpriteFile;
+	public void setExplosionSpriteFile(ArrayList<String> explosionSpriteFile) {
+		this._explosionSpriteFile = explosionSpriteFile;
 	}
 	public int getExplosionRows() {
-		return explosionRows;
+		return _explosionRows;
 	}
 	public void setExplosionRows(int explosionRows) {
-		this.explosionRows = explosionRows;
+		this._explosionRows = explosionRows;
 	}
 	public int getExplosionCols() {
-		return explosionCols;
+		return _explosionCols;
 	}
 	public void setExplosionCols(int explosionCols) {
-		this.explosionCols = explosionCols;
+		this._explosionCols = explosionCols;
 	}
 	
 	//properties separated by dashes
 	public String toString() {
-		return explosionSpriteFile +"|";
+		return _explosionSpriteFile +"|";
 	}
 }
